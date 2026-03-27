@@ -1,2 +1,41 @@
 
 /* Your CSS Code here. */
+body {
+    background-color: #eee;
+}
+
+/* HOLDER */
+.holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   /* items grouped in center */
+    align-items: center;       /* vertical center */
+    flex-wrap: wrap;           /* move to next row if needed */
+    gap: 5px;
+}
+
+/* ITEMS */
+.item {
+    width: 120px;
+    height: 120px;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: green;   /* default color */
+}
+
+/* First item → red */
+.item:nth-child(1) {
+    background-color: red;
+}
+
+/* Second item → blue */
+.item:nth-child(2) {
+    background-color: blue;
+}
+
+/* Third item → green (already default, but explicit) */
+.item:nth-child(3) {
+    background-color: green;
+}
